@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>د. محمود الغنام | أخصائي الجراحة العامة والعمليات الصغرى</title>
-    <meta name="description" content="الموقع الرسمي للدكتور محمود الغنام - أخصائي الجراحة العامة والعمليات الصغرى داخل العيادة. رعاية طبية آمنة ودقيقة بأحدث المعايير.">
+    <title>د. محمود إبراهيم الغنام | أخصائي الجراحة العامة والمناظير والتجميل</title>
+    <meta name="description" content="الموقع الرسمي للدكتور محمود إبراهيم الغنام - أخصائي الجراحة العامة والمناظير والتجميل في مجمع ابن سينا العالمي الطبي بالرياض. خبرة أكثر من 10 أعوام.">
     <style>
         :root {
-            --primary: #1e293b;
-            --accent: #0284c7;
-            --text: #334155;
+            --primary: #0b2545;
+            --accent: #134074;
+            --highlight: #e0a96d;
+            --success: #22c55e;
+            --text: #1e293b;
             --bg: #f8fafc;
         }
         body {
@@ -21,86 +23,178 @@
             line-height: 1.6;
         }
         header {
-            background-color: var(--primary);
+            background: linear-gradient(135deg, var(--primary), var(--accent));
             color: white;
             text-align: center;
             padding: 4rem 2rem;
+            position: relative;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 2.6rem;
         }
         header p {
-            font-size: 1.2rem;
-            color: var(--accent);
+            font-size: 1.3rem;
+            color: #93c5fd;
             margin-top: 0.5rem;
+            font-weight: 500;
+        }
+        .badge {
+            display: inline-block;
+            background-color: var(--highlight);
+            color: var(--primary);
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 1rem;
+            font-size: 0.9.5rem;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 2rem auto;
             padding: 0 1.5rem;
         }
         .card {
             background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05);
             margin-bottom: 2rem;
+            border: 1px solid #e2e8f0;
         }
         h2 {
             color: var(--primary);
-            border-bottom: 2px solid var(--accent);
+            border-bottom: 3px solid var(--highlight);
             padding-bottom: 0.5rem;
             margin-top: 0;
+            font-size: 1.6rem;
         }
-        .services-list {
-            list-style: none;
-            padding: 0;
+        .grid-services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.2rem;
+            margin-top: 1.5rem;
         }
-        .services-list li {
-            background: var(--bg);
-            padding: 0.75rem 1rem;
-            border-radius: 6px;
+        .service-box {
+            background: #f1f5f9;
+            padding: 1rem 1.2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            color: var(--accent);
+            border-right: 5px solid var(--accent);
+        }
+        .sub-services {
+            margin-top: 1rem;
+            padding-right: 1.5rem;
+        }
+        .sub-services li {
             margin-bottom: 0.5rem;
             font-weight: 500;
-            border-right: 4px solid var(--accent);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.8rem 2.5rem;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+        .btn-whatsapp { background-color: var(--success); }
+        .btn:hover { opacity: 0.9; transform: translateY(-2px); }
+        
+        .footer-duaa {
+            text-align: center;
+            background: #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-style: italic;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 2rem;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>د. محمود الغنام</h1>
-        <p>أخصائي الجراحة العامة والعمليات الصغرى داخل العيادة</p>
+        <h1>د. محمود إبراهيم الغنام</h1>
+        <p>أخصائي الجراحة العامة والمناظير والتجميل</p>
+        <div class="badge">🏅 خبرة أكثر من 10 أعوام</div>
     </header>
 
     <div class="container">
+        
+        <!-- خدماتنا الرئيسية -->
         <section class="card">
-            <h2>نبذة تعريفية</h2>
-            <p>مرحباً بكم في المنصة الرسمية لـ <strong>الدكتور محمود الغنام</strong>، أخصائي الجراحة العامة المتميز. نحرص على تقديم أعلى مستويات الرعاية الطبية والجراحية الآمنة، مع التركيز على الدقة المتناهية والراحة التامة للمريض أثناء الإجراءات الجراحية.</p>
+            <h2>خدماتنا الطبية والجراحية</h2>
+            <div class="grid-services">
+                <div class="service-box">🩺 متابعة العمليات الجراحية الكبرى</div>
+                <div class="service-box">👣 غيارات القدم السكري والمتابعة</div>
+                <div class="service-box">🔍 الكشف المبكر لأورام الغدة</div>
+                <div class="service-box">🔍 الكشف المبكر لأورام القولون والمستقيم</div>
+                <div class="service-box">🔍 الكشف المبكر لأورام الثدي</div>
+            </div>
         </section>
 
+        <!-- علاج أمراض الشرج -->
         <section class="card">
-            <h2>الخدمات والعمليات الصغرى داخل العيادة</h2>
-            <p>تُجرى كافة العمليات تحت تعقيم كامل وتخدير موضعي آمن دون الحاجة للتنويم بالمستشفى:</p>
-            <ul class="services-list">
-                <li>استئصال الأكياس الدهنية والأورام الحميدة السطحية.</li>
-                <li>جراحات الأظافر الغائر وعلاج الخراج والدمامل.</li>
-                <li>خياطة وتجميل الجروح وتعديل الندبات.</li>
-                <li>استئصال الثآليل والزوائد الجلدية بأحدث الطرق.</li>
+            <h2>علاج كافة أمراض الشرج</h2>
+            <ul class="services-list" style="list-style-type: '✓ '; padding-right: 1.2rem; font-weight: 500; font-size: 1.1rem;">
+                <li style="margin-bottom: 0.6rem;">البواسير</li>
+                <li style="margin-bottom: 0.6rem;">الشرخ الشرجى</li>
+                <li style="margin-bottom: 0.6rem;">الناسور الشرجى</li>
+                <li style="margin-bottom: 0.6rem;">الزوائد الجلدية</li>
+                <li style="margin-bottom: 0.6rem;">الالتهابات والمضاعفات الأخرى</li>
             </ul>
         </section>
 
+        <!-- إجراء العمليات الجراحية الصغرى -->
         <section class="card">
-            <h2>للتواصل والحجز</h2>
-            <p>للاستفسار عن المواعيد أو الاستشارات الطبية الجراحية، يسعدنا تواصلكم:</p>
-            <p>📧 البريد الإلكتروني: <a href="mailto:dr.mahmoud@example.com" style="color: var(--accent); text-decoration: none;">dr.mahmoud@example.com</a></p>
+            <h2>إجراء العمليات الجراحية الصغرى داخل العيادة</h2>
+            <p>تجرى كافة العمليات بدقة متناهية وتحت تعقيم طبي كامل:</p>
+            <ul style="list-style-type: '🔹 '; padding-right: 1.2rem; font-weight: 500; font-size: 1.1rem;">
+                <li style="margin-bottom: 0.6rem;">
+                    <strong>ختان الأطفال:</strong>
+                    <ul style="list-style-type: circle; padding-right: 1.5rem; font-size: 1rem; color: #475569;">
+                        <li>الحلقة: أفضل أمان وأحسن شكل وأقل ألم.</li>
+                        <li>الليزر: أسرع شفاء وأقل ألم.</li>
+                    </ul>
+                </li>
+                <li style="margin-bottom: 0.6rem;">خياطة الجرح بأفضل الطرق التجميلية</li>
+                <li style="margin-bottom: 0.6rem;">إزالة الكيس الدهني</li>
+                <li style="margin-bottom: 0.6rem;">أورام الجلد</li>
+                <li style="margin-bottom: 0.6rem;">الظفر الغائر</li>
+            </ul>
+        </section>
+
+        <!-- مقر وعنوان العيادة -->
+        <section class="card">
+            <h2>مقر العيادة وموقعها</h2>
+            <p>📍 <strong>العنوان:</strong> مجمع ابن سينا العالمي الطبي - حي الملز، مدينة الرياض، المملكة العربية السعودية.</p>
+            <p style="font-size: 0.95rem; color: #475569;">✨ <em>خبرة .. دقة .. رعاية أفضل | صحتك .. هدفنا</em></p>
+        </section>
+
+        <!-- الدعاء المكتوب أسفل اللافته -->
+        <div class="footer-duaa">
+            "أَللَّهُمَّ رَبَّ النَّاسِ، أَذْهِبِ الْبَأْسَ اشْفِ أَنْتَ الشَّافِي، لَا شِفَاءَ إِلَّا شِفَاؤُكَ"
+        </div>
+
+        <!-- أرقام التواصل الفوري والمباشر -->
+        <section class="card" style="text-align: center;">
+            <h2>للتواصل والحجز الفوري</h2>
+            <p>للاستفسارات الطبية وحجز موعد في العيادة، يسعدنا تواصلكم المباشر عبر تطبيق الواتساب:</p>
+            <a href="https://wa.me" target="_blank" class="btn btn-whatsapp">💬 تواصل عبر واتساب فقط</a>
         </section>
     </div>
 
     <footer>
         <p style="text-align: center; padding: 2rem; background: var(--primary); color: #94a3b8; font-size: 0.9rem; margin: 0;">
-            جميع الحقوق محفوظة © د. محمود الغنام 2026
+            جميع الحقوق محفوظة © د. محمود إبراهيم الغنام 2026
         </p>
     </footer>
 
